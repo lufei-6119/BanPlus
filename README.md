@@ -57,7 +57,7 @@ BanPlus provides straightforward commands for server administration:
 ```text
 /ban <player> [duration] [reason]
 /unban <player>
-/betterban help
+/banplus help
 ```
 
 Command suggestions and built-in feedback make the commands easier to use, even for administrators who are new to the plugin.
