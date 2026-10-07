@@ -1,6 +1,31 @@
-name: BetterBan
+name: BanPlus
 version: '${version}'
 
-main: com.betterban.BetterBan
+main: com.banplus.BanPlus
 api-version: '1.20'
 load: POSTWORLD
+
+commands:
+  ban:
+    description: 封禁玩家
+    usage: /ban <玩家> <天数> <原因>
+    permission: betterban.ban
+
+  unban:
+    description: 解封玩家
+    usage: /unban <玩家>
+    permission: betterban.unban
+
+  betterban:
+    description: BetterBan 主命令
+    usage: /betterban <ban|unban>
+    permission: betterban.ban
+
+permissions:
+  betterban.ban:
+    description: 允许使用 BetterBan 封禁玩家
+    default: op
+
+  betterban.unban:
+    description: 允许使用 BetterBan 解封玩家
+    default: op

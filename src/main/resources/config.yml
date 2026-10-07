@@ -1,0 +1,217 @@
+# ==========================================================
+# BanPlus 配置文件
+# ==========================================================
+
+# 当前语言
+#
+# 可选：
+# zh_CN = 简体中文
+# en_US = English
+#
+language: en_US
+
+
+# ==========================================================
+# 语言文本
+# ==========================================================
+
+messages:
+
+  # ========================================================
+  # 中文
+  # ========================================================
+  zh_CN:
+
+    # -------------------------
+    # 权限
+    # -------------------------
+    no-permission: "&c你没有权限执行此命令！"
+
+    # -------------------------
+    # 命令用法
+    # -------------------------
+    ban-usage: "&c用法: /ban <玩家> <天数> <原因>"
+    unban-usage: "&c用法: /unban <玩家>"
+    betterban-usage: "&c用法: /betterban <ban|unban>"
+    betterban-ban-usage: "&c用法: /betterban ban <玩家> <天数> <原因>"
+    betterban-unban-usage: "&c用法: /betterban unban <玩家>"
+
+    # -------------------------
+    # Ban
+    # -------------------------
+    invalid-days: "&c封禁时间必须是数字，例如：7"
+    days-must-positive: "&c封禁时间必须大于 0 天！"
+
+    player-not-found: "&c找不到玩家 &f{player}"
+
+    cannot-ban-self: "&c你不能封禁自己！"
+    cannot-ban-op: "&c不能封禁 OP 玩家！"
+
+    ban-success: "&a成功封禁玩家 &f{player}"
+    ban-duration: "&7封禁时间: &f{days} 天"
+    ban-reason: "&7封禁原因: &f{reason}"
+    ban-end-time: "&7解封时间: &f{time}"
+
+    ban-broadcast: "&c{player}&f 被管理员封禁了 &c{days}&f 天。"
+
+    # -------------------------
+    # 玩家被踢出
+    # -------------------------
+    kick-ban:
+      - "&c你已被封禁！"
+      - ""
+      - "&f封禁原因："
+      - "&e{reason}"
+      - ""
+      - "&f封禁时长：&e{days} 天"
+      - ""
+      - "&f解封时间："
+      - "&b{time}"
+
+    # -------------------------
+    # 玩家进入服务器时
+    # -------------------------
+    login-ban:
+      - "&c你已被封禁！"
+      - ""
+      - "&f封禁原因："
+      - "&e{reason}"
+      - ""
+      - "&f解封时间："
+      - "&b{time}"
+
+    # -------------------------
+    # Unban
+    # -------------------------
+    not-banned: "&e{player} 当前没有被 BetterBan 封禁。"
+
+    unban-success: "&a成功解封玩家 &f{player}&a！"
+
+    unban-broadcast: "&a{player}&f 已被解除封禁。"
+
+    # -------------------------
+    # BetterBan 帮助
+    # -------------------------
+    help:
+      - "&6===== Better Ban ====="
+      - "&e/ban <玩家> <天数> <原因>"
+      - "&e/unban <玩家>"
+      - "&e/betterban ban <玩家> <天数> <原因>"
+      - "&e/betterban unban <玩家>"
+
+    # -------------------------
+    # Tab 补全
+    # -------------------------
+    tab-reasons:
+      - "广告"
+      - "作弊"
+      - "辱骂"
+      - "恶意破坏"
+      - "刷屏"
+      - "其他"
+
+    # -------------------------
+    # 插件日志
+    # -------------------------
+    plugin-enabled: "&aBetter Ban 已启用！"
+    plugin-disabled: "&cBetter Ban 已关闭！"
+
+
+  # ========================================================
+  # English
+  # ========================================================
+  en_US:
+
+    # -------------------------
+    # Permissions
+    # -------------------------
+    no-permission: "&cYou do not have permission to use this command!"
+
+    # -------------------------
+    # Command usage
+    # -------------------------
+    ban-usage: "&cUsage: /ban <player> <days> <reason>"
+    unban-usage: "&cUsage: /unban <player>"
+    betterban-usage: "&cUsage: /betterban <ban|unban>"
+    betterban-ban-usage: "&cUsage: /betterban ban <player> <days> <reason>"
+    betterban-unban-usage: "&cUsage: /betterban unban <player>"
+
+    # -------------------------
+    # Ban
+    # -------------------------
+    invalid-days: "&cBan duration must be a number, for example: 7"
+    days-must-positive: "&cBan duration must be greater than 0 days!"
+
+    player-not-found: "&cPlayer &f{player} &cnot found."
+
+    cannot-ban-self: "&cYou cannot ban yourself!"
+    cannot-ban-op: "&cYou cannot ban an OP player!"
+
+    ban-success: "&aSuccessfully banned &f{player}"
+    ban-duration: "&7Ban duration: &f{days} days"
+    ban-reason: "&7Ban reason: &f{reason}"
+    ban-end-time: "&7Unban time: &f{time}"
+
+    ban-broadcast: "&c{player}&f has been banned for &c{days}&f days."
+
+    # -------------------------
+    # Player kicked
+    # -------------------------
+    kick-ban:
+      - "&cYou have been banned!"
+      - ""
+      - "&fBan reason:"
+      - "&e{reason}"
+      - ""
+      - "&fBan duration: &e{days} days"
+      - ""
+      - "&fUnban time:"
+      - "&b{time}"
+
+    # -------------------------
+    # Login ban
+    # -------------------------
+    login-ban:
+      - "&cYou are banned!"
+      - ""
+      - "&fBan reason:"
+      - "&e{reason}"
+      - ""
+      - "&fUnban time:"
+      - "&b{time}"
+
+    # -------------------------
+    # Unban
+    # -------------------------
+    not-banned: "&e{player} is not currently banned by BetterBan."
+
+    unban-success: "&aSuccessfully unbanned &f{player}&a!"
+
+    unban-broadcast: "&a{player}&f has been unbanned."
+
+    # -------------------------
+    # BetterBan help
+    # -------------------------
+    help:
+      - "&6===== Better Ban ====="
+      - "&e/ban <player> <days> <reason>"
+      - "&e/unban <player>"
+      - "&e/betterban ban <player> <days> <reason>"
+      - "&e/betterban unban <player>"
+
+    # -------------------------
+    # Tab completion
+    # -------------------------
+    tab-reasons:
+      - "Advertising"
+      - "Cheating"
+      - "Insulting"
+      - "Griefing"
+      - "Spamming"
+      - "Other"
+
+    # -------------------------
+    # Plugin logs
+    # -------------------------
+    plugin-enabled: "&aBetter Ban enabled!"
+    plugin-disabled: "&cBetter Ban disabled!"

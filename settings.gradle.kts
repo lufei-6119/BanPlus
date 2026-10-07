@@ -1,1 +1,1 @@
-rootProject.name = "BetterBan"
+rootProject.name = "BanPlus"
