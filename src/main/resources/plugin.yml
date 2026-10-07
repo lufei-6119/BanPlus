@@ -1,0 +1,6 @@
+name: BetterBan
+version: '${version}'
+
+main: com.betterban.BetterBan
+api-version: '1.20'
+load: POSTWORLD
