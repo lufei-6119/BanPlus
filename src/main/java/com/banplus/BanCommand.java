@@ -39,7 +39,7 @@ public class BanCommand implements CommandExecutor {
          */
         if (command.getName().equalsIgnoreCase("ban")) {
 
-            if (!sender.hasPermission("betterban.ban")) {
+            if (!sender.hasPermission("banplus.ban")) {
                 sender.sendMessage(
                         language.get("no-permission")
                 );
@@ -61,7 +61,7 @@ public class BanCommand implements CommandExecutor {
          */
         if (command.getName().equalsIgnoreCase("unban")) {
 
-            if (!sender.hasPermission("betterban.unban")) {
+            if (!sender.hasPermission("banplus.unban")) {
                 sender.sendMessage(
                         language.get("no-permission")
                 );
@@ -82,9 +82,9 @@ public class BanCommand implements CommandExecutor {
         }
 
         /*
-         * /betterban
+         * /banplus
          */
-        if (command.getName().equalsIgnoreCase("betterban")) {
+        if (command.getName().equalsIgnoreCase("banplus")) {
 
             if (args.length == 0) {
                 sendHelp(sender);
@@ -92,11 +92,11 @@ public class BanCommand implements CommandExecutor {
             }
 
             /*
-             * /betterban ban
+             * /banplus ban
              */
             if (args[0].equalsIgnoreCase("ban")) {
 
-                if (!sender.hasPermission("betterban.ban")) {
+                if (!sender.hasPermission("banplus.ban")) {
                     sender.sendMessage(
                             language.get("no-permission")
                     );
@@ -106,7 +106,7 @@ public class BanCommand implements CommandExecutor {
                 if (args.length < 4) {
                     sender.sendMessage(
                             language.get(
-                                    "betterban-ban-usage"
+                                    "banplus-ban-usage"
                             )
                     );
                     return true;
@@ -130,11 +130,11 @@ public class BanCommand implements CommandExecutor {
             }
 
             /*
-             * /betterban unban
+             * /banplus unban
              */
             if (args[0].equalsIgnoreCase("unban")) {
 
-                if (!sender.hasPermission("betterban.unban")) {
+                if (!sender.hasPermission("banplus.unban")) {
                     sender.sendMessage(
                             language.get("no-permission")
                     );
@@ -144,7 +144,7 @@ public class BanCommand implements CommandExecutor {
                 if (args.length != 2) {
                     sender.sendMessage(
                             language.get(
-                                    "betterban-unban-usage"
+                                    "banplus-unban-usage"
                             )
                     );
                     return true;

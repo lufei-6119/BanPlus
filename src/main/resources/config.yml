@@ -32,9 +32,9 @@ messages:
     # -------------------------
     ban-usage: "&c用法: /ban <玩家> <天数> <原因>"
     unban-usage: "&c用法: /unban <玩家>"
-    betterban-usage: "&c用法: /betterban <ban|unban>"
-    betterban-ban-usage: "&c用法: /betterban ban <玩家> <天数> <原因>"
-    betterban-unban-usage: "&c用法: /betterban unban <玩家>"
+    banplus-usage: "&c用法: /banplus <ban|unban>"
+    banplus-ban-usage: "&c用法: /banplus ban <玩家> <天数> <原因>"
+    banplus-unban-usage: "&c用法: /banplus unban <玩家>"
 
     # -------------------------
     # Ban
@@ -83,21 +83,21 @@ messages:
     # -------------------------
     # Unban
     # -------------------------
-    not-banned: "&e{player} 当前没有被 BetterBan 封禁。"
+    not-banned: "&e{player} 当前没有被 banplus 封禁。"
 
     unban-success: "&a成功解封玩家 &f{player}&a！"
 
     unban-broadcast: "&a{player}&f 已被解除封禁。"
 
     # -------------------------
-    # BetterBan 帮助
+    # banplus 帮助
     # -------------------------
     help:
       - "&6===== Better Ban ====="
       - "&e/ban <玩家> <天数> <原因>"
       - "&e/unban <玩家>"
-      - "&e/betterban ban <玩家> <天数> <原因>"
-      - "&e/betterban unban <玩家>"
+      - "&e/banplus ban <玩家> <天数> <原因>"
+      - "&e/banplus unban <玩家>"
 
     # -------------------------
     # Tab 补全
@@ -132,9 +132,9 @@ messages:
     # -------------------------
     ban-usage: "&cUsage: /ban <player> <days> <reason>"
     unban-usage: "&cUsage: /unban <player>"
-    betterban-usage: "&cUsage: /betterban <ban|unban>"
-    betterban-ban-usage: "&cUsage: /betterban ban <player> <days> <reason>"
-    betterban-unban-usage: "&cUsage: /betterban unban <player>"
+    banplus-usage: "&cUsage: /banplus <ban|unban>"
+    banplus-ban-usage: "&cUsage: /banplus ban <player> <days> <reason>"
+    banplus-unban-usage: "&cUsage: /banplus unban <player>"
 
     # -------------------------
     # Ban
@@ -183,21 +183,21 @@ messages:
     # -------------------------
     # Unban
     # -------------------------
-    not-banned: "&e{player} is not currently banned by BetterBan."
+    not-banned: "&e{player} is not currently banned by banplus."
 
     unban-success: "&aSuccessfully unbanned &f{player}&a!"
 
     unban-broadcast: "&a{player}&f has been unbanned."
 
     # -------------------------
-    # BetterBan help
+    # banplus help
     # -------------------------
     help:
-      - "&6===== Better Ban ====="
+      - "&6===== BanPlus ====="
       - "&e/ban <player> <days> <reason>"
       - "&e/unban <player>"
-      - "&e/betterban ban <player> <days> <reason>"
-      - "&e/betterban unban <player>"
+      - "&e/banplus ban <player> <days> <reason>"
+      - "&e/banplus unban <player>"
 
     # -------------------------
     # Tab completion
@@ -213,5 +213,5 @@ messages:
     # -------------------------
     # Plugin logs
     # -------------------------
-    plugin-enabled: "&aBetter Ban enabled!"
-    plugin-disabled: "&cBetter Ban disabled!"
+    plugin-enabled: "BanPlus enabled!"
+    plugin-disabled: "BanPlus disabled!"

@@ -84,10 +84,10 @@ public class BanTabCompleter
         }
 
         /*
-         * /betterban
+         * /banplus
          */
         if (command.getName()
-                .equalsIgnoreCase("betterban")) {
+                .equalsIgnoreCase("banplus")) {
 
             // ban / unban
             if (args.length == 1) {

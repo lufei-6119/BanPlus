@@ -65,10 +65,10 @@ public final class BanPlus extends JavaPlugin {
                         tabCompleter
                 );
 
-        getCommand("betterban")
+        getCommand("banplus")
                 .setExecutor(banCommand);
 
-        getCommand("betterban")
+        getCommand("banplus")
                 .setTabCompleter(
                         tabCompleter
                 );
@@ -119,7 +119,7 @@ public final class BanPlus extends JavaPlugin {
         } else {
 
             getLogger().info(
-                    "Better Ban disabled!"
+                    "BanPlus disabled!"
             );
         }
     }
